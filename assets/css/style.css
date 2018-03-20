@@ -166,8 +166,13 @@ form button{
   width: 100%;
   margin: .5em;
 }
+form textarea{
+  opacity: .25;
+}
 form input{
   padding: .5em;
+  border: solid 1px;
+  opacity: .25;
 }
 
 form button{
@@ -175,9 +180,11 @@ form button{
   width: 20%;
   color: var(--main-header);
   padding: 1em;
+  font-size: 1.1em;
 }
 form{
   margin: auto;
   width: 900px;
   color: var(--font-color);
+
 }
