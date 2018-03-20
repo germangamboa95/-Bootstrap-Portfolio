@@ -49,6 +49,32 @@ body p{
   clear: both;
 }
 
+/*
+  Grid with floats.
+ */
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+ [class*="col-"] {
+     float: left;
+ }
+ .col-1{width: 8.33%;}
+ .col-2{width: 12.67%;}
+ .col-3{width: 25%;}
+ .col-4{width: 33%;}
+ .col-5{width: 41.67%;}
+ .col-6{width: 50%;}
+ .col-7{width: 58.33%;}
+ .col-8{width: 66.67%;}
+ .col-9{width: .75%;}
+ .col-10{width: 83.33%;}
+ .col-11{width: 91.67%;}
+ .col-12{width: 100%;}
+
+
+
 
 /*Top section of page
   logo styles and nav styles
@@ -59,6 +85,7 @@ header{
   margin: auto;
   border-bottom: solid 1px var(--main-header-border);
   background-color: var(--main-header);
+  box-shadow: 1px -1px 8px 1px rgba(107,102,63,.9);
 }
 header .logo{
   float: left;
@@ -72,6 +99,7 @@ header .logo{
   font-size: 1.75rem;
   padding-left: .25em;
   padding-right: .25em;
+  text-shadow: -3px 3px 6px rgba(0,0,0,1);
 
 }
 header nav{
@@ -91,9 +119,15 @@ nav a{
   color: inherit;
   padding: .5em;
 }
+nav .active{
+  color: var(--heading-bgs);
+}
+nav a:hover{
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
 /*Wrapper class for nav to keep everything inside the content area */
 .wrapper{
-  width: 960px;
+  max-width: 900px;
   margin: auto;
 }
 
@@ -102,11 +136,12 @@ nav a{
   footer - its sticky but it's also hacky
  */
 .container{
-  width: 960px;
+  max-width: 900px;
   margin: 1em auto;
   margin-bottom: 3em;
   background-color: var(--main-content-bg);
   padding: .5em 1.75em 1em 1.75em;
+  box-shadow: 0px 7px 10px 3px rgba(107,102,63,.9);
 }
 .container h1{
   font-weight: bold;
@@ -138,27 +173,37 @@ footer p{
   height: auto;
   float: left;
   margin-right: 2em;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  shape-outside: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 /*Portfolio page styles and layout*/
 .card{
-  width: 200px;
+  width: 100%;
   height: auto;
-  position: relative;
-  margin: 1em;
-  display: inline-block;
+  padding: 1em;
   text-align: center;
 }
-.card h3{
-  position: absolute;
-  padding: 1em 4.505em;
-  right: 0px;
-  top: 70px;
-  background-color: var(--heading-bgs);
-  color: var(--main-header);
+
+.card-content{
+  width: 200px;
+  margin:  0 auto;
 
 }
-.card img{
+.card h3{
+  background-color: var(--heading-bgs);
+  color: var(--main-header);
   width: 100%;
+
+}
+.card a{
+  text-decoration: none;
+  color: inherit;
+}
+.card h3:hover{
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+.card img{
+  width: 200px;
 }
 
 /*Contact Page styles and layouts*/
@@ -188,7 +233,32 @@ form button{
 }
 form{
   margin: auto;
-  width: 900px;
+  max-width: 900px;
   color: var(--font-color);
 
+}
+
+@media (max-width: 700px) {
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12
+  {
+    width: 100%;
+  }
+
+  .card,
+  .card img,
+  .card h3{
+    width: 500px;
+    margin: auto;
+  }
 }
