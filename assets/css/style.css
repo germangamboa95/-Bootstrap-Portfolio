@@ -66,21 +66,23 @@ header .logo{
   height: 100%;
   text-align: center;
 }
-.logo  h1{
-  margin: .5em auto;
+.logo  p{
+  margin: .5em auto .35em auto;
   color: var(--main-header);
   font-size: 1.75rem;
-  padding: .25em;
+  padding-left: .25em;
+  padding-right: .25em;
+
 }
 header nav{
   float: right;
   margin-top: 2em;
 }
-nav ul{
+nav li{
   display: inline-block;
   color: var(--font-color);
 }
-nav ul:nth-child(2){
+nav li:nth-child(2){
   border-left: 1px solid var(--font-color);
   border-right: 1px solid var(--font-color);
 }
@@ -91,7 +93,7 @@ nav a{
 }
 /*Wrapper class for nav to keep everything inside the content area */
 .wrapper{
-  width: 960;
+  width: 960px;
   margin: auto;
 }
 
@@ -118,12 +120,14 @@ footer{
   padding-bottom: 1.5em;
   text-align: center;
   width: 100%;
+  border-top: .5em solid var(--heading-bgs);
 }
 
 footer p{
   color: var(--main-header);
   padding-top: 1em;
 }
+
 
 .content {
   min-height: calc(100vh - 70px);
