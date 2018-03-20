@@ -21,6 +21,7 @@ h5{
 }
 
 body{
+  background-image: url("/assets/images/dust_scratches.png");
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
@@ -43,12 +44,15 @@ header .logo{
   text-align: center;
 }
 
-.logo{
+.logo h1{
+  margin: .5em auto;
   color: var(--main-header);
-  font-size: 2rem;
+  font-size: 1.75rem;
+  padding: .25em;
 }
 header nav{
   float: right;
+  margin-top: 2em;
 }
 
 nav ul{
@@ -60,18 +64,24 @@ nav ul:nth-child(2){
   border-left: 1px solid var(--font-color);
   border-right: 1px solid var(--font-color);
 }
+
 nav a{
   text-decoration: none;
   color: inherit;
+  padding: .5em;
 }
 
 .container{
   width: 960px;
   margin: auto;
 }
-
+.container h1{
+  font-size: 1.75em;
+  margin-top: 1.25em;
+  margin-bottom: 1em;
+}
 .about-me img{
-  width: 100px;
+  width: 150px;
   height: auto;
   float: left;
   margin-right: 2em;
