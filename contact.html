@@ -9,10 +9,11 @@
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/images/coffeebean-16-195484.png">
+
 </head>
 
 <body>
-  <div class="content">
+  <div class="content group">
     <header>
       <div class="wrapper">
         <div class="logo">
@@ -29,30 +30,44 @@
       </div>
       <!--End of nav wrapper -->
     </header>
-    <section class="container">
-      <h1>Contact</h1>
-      <hr>
-      <form action="POST">
+    <div class="wrapper">
+      <div class="row">
+    <section  class="contact-floats  container col-8">
+        <h1>Contact</h1>
 
-        <label for="name">Name:</label>
-        <input id="name" type="text" name="name" value="">
-        <label for="email">Email:</label>
-        <input id="email" type="text" name="email" value="">
-        <label for="msg">Message:</label>
-        <textarea id="msg" name="name" rows="8" cols="80"></textarea>
+        <hr>
+        <form action="POST">
 
-        <button type="button" name="button">Submit</button>
-      </form>
+          <label for="name">Name:</label>
+          <input id="name" type="text" name="name" value="">
+          <label for="email">Email:</label>
+          <input id="email" type="text" name="email" value="">
+          <label for="msg">Message:</label>
+          <textarea id="msg" name="name" rows="8" cols="80"></textarea>
+
+          <button type="button" name="button">Submit</button>
+        </form>
 
     </section>
+    <aside class="contact-floats container col-2">
+      <h2>Social Media</h2>
+      <ul>
+        <li><img class="icon" src="assets/images/facebook-square.svg" alt=""></li>
+        <li><img class="icon" src="assets/images/github.svg" alt=""></li>
+        <li><img class="icon" src="assets/images/youtube.svg" alt=""></li>
+        <li><img class="icon" src="assets/images/twitter-square.svg" alt=""></li>
+      </ul>
+    </aside>
+    </div>
   </div>
+  </div>
+
   <footer>
     <div class="wrapper">
       <p>German Gamboa &copy; 2018</p>
     </div>
 
   </footer>
-
 </body>
 
 </html>
