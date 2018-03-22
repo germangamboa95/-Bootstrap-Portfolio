@@ -226,16 +226,6 @@ footer p {
   padding-top: 1em;
 }
 
-footer::before{
-  content: "";
-  width: 20px;
-  height: 1px;
-  border: 1px red solid;
-  background-color: red;
-  position: absolute;
-
-
-}
 
 .content {
   min-height: calc(100vh - 70px);
