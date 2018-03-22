@@ -569,5 +569,5 @@ form {
 }
 
 .zoomIn {
-  animation-name: zoomIn;
+  animation-name: zoomIn !important;
 }
