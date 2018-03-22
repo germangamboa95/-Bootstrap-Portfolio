@@ -243,7 +243,8 @@ footer p {
   border-radius: .2em;
 }
 
-.about-me p::first-letter{
+.about-me p::first-letter,
+.blog-post p::first-letter{
   color: #903;
   float: left;
   font-family: Georgia;
@@ -258,7 +259,7 @@ footer p {
 
 .card {
   max-width: 30em;
-  min-width: 20em;
+
   height: auto;
   text-align: center;
   position: relative;
@@ -295,8 +296,8 @@ footer p {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 99%;
-  width: 99%;
+  height: 100%;
+  width: 100%;
   opacity: 0;
   transition: .5s ease;
   background-color: var(--heading-bgs);
@@ -368,4 +369,105 @@ form {
   40%{
     transform: rotate(-280deg);
   }
+}
+
+
+
+
+
+/**
+ @media query
+
+**/
+
+@media (max-width: 915px) {
+  .container{
+    margin: 1em 1em;
+  }
+}
+
+@media (max-width:770px) {
+  aside li{
+    display: inline-block;
+  }
+  .contact-floats{
+    width: 100%;
+    margin: 1em 1em;
+  }
+
+  .logo{
+    margin: 1em auto;
+    width: 100%;
+  }
+  .card:first-child{
+    margin-left: 1em;
+  }
+  .col-5,
+  .col-8,
+  .col-2{
+    width: 100%;
+  }
+  .row{
+    padding: 0 5em;
+  }
+  .card{
+  margin-left: 1em;
+  }
+  header{
+    height: auto;
+  }
+  .wrapper{
+    display: block;
+    text-align: center;
+  }
+  nav{
+    display: block;
+    width: 100%;
+  }
+
+  nav li{
+    display: block;
+    width: 100%;
+    color: var(--main-header);
+    background-color: var(--heading-bgs);
+    margin-top: .1em;
+    font-size: 1.75em;
+
+  }
+  nav a{
+    display: inline-block;
+    width: 100%
+  }
+
+@media (max-width: 570px) {
+  .contact-floats{
+    margin: 1em 1em;
+
+    width: 90%;
+  }
+  body p {
+    line-height: 1.25;
+
+  }
+  .row{
+    padding: 0;
+  }
+  .card:first-child{
+    margin-left: auto;
+  }
+
+  .card{
+    width: 100%;
+    padding: 0;
+    margin: auto;
+  }
+  .card p{
+    display: none;
+  }
+  .card h3{
+    font-size: 1em;
+  }
+
+
+
 }
