@@ -40,6 +40,53 @@ body p {
   color: var(--font-color);
 }
 
+form label, form input, form textarea, form button {
+  display: block;
+  width: 100%;
+  margin: .5em;
+}
+
+form textarea {
+
+  margin: auto;
+}
+
+form input {
+  padding: .5em;
+  border: solid 1px;
+  margin: auto;
+
+  color:var(--font-color);
+}
+
+form button {
+  background-color: var(--heading-bgs);
+  width: 20%;
+  color: var(--main-header);
+  padding: 1em;
+  font-size: 1.1em;
+}
+
+form {
+  margin: auto;
+  color: var(--font-color);
+}
+
+footer {
+  background-color: var(--footer-bg);
+  padding-bottom: 1.5em;
+  text-align: center;
+  width: 100%;
+  border-top: .5em solid var(--heading-bgs);
+  position: relative;
+}
+
+footer p {
+  color: var(--main-header);
+  padding-top: 1em;
+}
+
+
 .right {
   float: right;
 }
@@ -212,19 +259,6 @@ nav a:hover {
   margin-bottom: 1em;
   margin-top: 1.25em;
 }
-footer {
-  background-color: var(--footer-bg);
-  padding-bottom: 1.5em;
-  text-align: center;
-  width: 100%;
-  border-top: .5em solid var(--heading-bgs);
-  position: relative;
-}
-
-footer p {
-  color: var(--main-header);
-  padding-top: 1em;
-}
 
 
 .content {
@@ -308,38 +342,8 @@ footer p {
 
 /*Contact Page styles and layouts*/
 
-form label, form input, form textarea, form button {
-  display: block;
-  width: 100%;
-  margin: .5em;
-}
 
-form textarea {
 
-  margin: auto;
-}
-
-form input {
-  padding: .5em;
-  border: solid 1px;
-  margin: auto;
-
-  color:var(--font-color);
-}
-
-form button {
-  background-color: var(--heading-bgs);
-  width: 20%;
-  color: var(--main-header);
-  padding: 1em;
-  font-size: 1.1em;
-}
-
-form {
-  margin: auto;
-
-  color: var(--font-color);
-}
 .contact-floats{
   margin: 1em;
   text-align: center;
@@ -361,7 +365,7 @@ form {
   animation: btn-social;
   animation-duration: 1s;
 }
-
+/*Animation for social media btns*/
 @keyframes btn-social {
   0%{
     transform: scale(1.25);
@@ -376,7 +380,16 @@ form {
 
 
 /**
- @media query
+        _          _   _   _
+        | |        | | | | (_)
+        ___ _ __   __ _  __ _| |__   ___| |_| |_ _
+        / __| '_ \ / _` |/ _` | '_ \ / _ \ __| __| |
+        \__ \ |_) | (_| | (_| | | | |  __/ |_| |_| |
+        |___/ .__/ \__,_|\__, |_| |_|\___|\__|\__|_|
+        | |           __/ |
+        |_|          |___/
+
+  Performing gracefull degradation was not gracefull at all. But it works!
 
 **/
 
@@ -451,7 +464,6 @@ form {
   }
   body p {
     line-height: 1.25;
-
   }
   .row{
     padding: 0;

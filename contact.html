@@ -69,9 +69,10 @@
 
   </footer>
   <script type="text/javascript">
-    window.onload = () =>{
-      let x = document.querySelectorAll('.contact-floats ');
-      for(let i in x){
+    window.onload = () => {
+      let x = document.querySelectorAll('.container');
+      console.log(x);
+      for (let i = 0; i < x.length ; i++) {
         x[i].classList.add('animated', 'zoomIn');
       }
     }

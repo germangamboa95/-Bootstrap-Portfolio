@@ -38,7 +38,8 @@
       <h1>About Me</h1>
       <hr>
       <img src="assets/images/IMG_0436.jpg" alt="A picture of German">
-      <p>A simple creature that goes by the name German. He is fueled by copious amounts of caffeine. Most of the time he can be found developing solutions on the web. This creature is by nature a problem solver. Thus it is only natural that he would also be a Developer. German currently specializes in the Web Technologies. He can be found using HTML, CSS, JavaScipt, and PHP... in the same manner that primates use rocks to crack nuts.</p>
+      <p>A simple creature that goes by the name German. He is fueled by copious amounts of caffeine. Most of the time he can be found developing solutions on the web. This creature is by nature a problem solver. Thus it is only natural that he would also
+        be a Developer. German currently specializes in the Web Technologies. He can be found using HTML, CSS, JavaScipt, and PHP... in the same manner that primates use rocks to crack nuts.</p>
       <br>
     </section>
 
@@ -46,7 +47,8 @@
       <h1>Blog Posts</h1>
       <hr>
       <h2>UCF Boot Camp Day One</h2>
-      <p>Today was pretty straightforward. As with any other first day, it began with introductions. Everyone introduced themselves as well as explained their reason for being there. It’s a fairly large class and sadly I was one of the last arrive which means I ended getting the worst seat. By worst seat, I mean the one right next to the door. <a href="http://www.germangamboa.com/2018/03/ucf-boot-camp-day-one"  target="_blank" class="read-more">Read More...</a></p>
+      <p>Today was pretty straightforward. As with any other first day, it began with introductions. Everyone introduced themselves as well as explained their reason for being there. It’s a fairly large class and sadly I was one of the last arrive which
+        means I ended getting the worst seat. By worst seat, I mean the one right next to the door. <a href="http://www.germangamboa.com/2018/03/ucf-boot-camp-day-one" target="_blank" class="read-more">Read More...</a></p>
       <br>
     </section>
 
@@ -59,9 +61,10 @@
     <p>German Gamboa &copy; 2018</p>
   </footer>
   <script type="text/javascript">
-    window.onload = () =>{
+    window.onload = () => {
       let x = document.querySelectorAll('.container');
-      for(let i in x){
+      console.log(x);
+      for (let i = 0; i < x.length ; i++) {
         x[i].classList.add('animated', 'zoomIn');
       }
     }

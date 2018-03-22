@@ -19,7 +19,7 @@
       </div>
       <nav class="group">
         <ul>
-          <li><a  href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a class="active" href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -28,63 +28,64 @@
     </div>
     <!--End of nav wrapper -->
   </header>
-    <section class="container group">
-      <h1>Portfolio</h1>
-      <hr>
+  <section class="container group">
+    <h1>Portfolio</h1>
+    <hr>
 
-      <div class="row">
-        <div class="card col-5">
-          <img src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
-          <div class="overlay">
-            <div class="text">
-              <h3>SOC Manager</h3>
-              <p>A social media manager.</p>
-            </div>
-          </div>
-        </div>
-        <div class="card col-5">
-          <img src="https://images.pexels.com/photos/89955/pexels-photo-89955.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
-          <div class="overlay">
-            <div class="text">
-              <h3>DarkTheme All The Things</h3>
-              <p>App that dark themes everything!</p>
-            </div>
+    <div class="row">
+      <div class="card col-5">
+        <img src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+        <div class="overlay">
+          <div class="text">
+            <h3>SOC Manager</h3>
+            <p>A social media manager.</p>
           </div>
         </div>
       </div>
-
-      <div class="row">
-        <div class="card col-5">
-          <img src="https://images.pexels.com/photos/38271/ipad-map-tablet-internet-38271.jpeg?h=350&dpr=2&auto=compress&cs=tinysrgb" alt="">
-          <div class="overlay">
-            <div class="text">
-              <h3>UBER Late</h3>
-              <p>Find out why your driver is late!</p>
-            </div>
-          </div>
-        </div>
-        <div class="card col-5">
-          <img src="https://images.pexels.com/photos/242492/pexels-photo-242492.jpeg?h=350&dpr=2&auto=compress&cs=tinysrgb" alt="">
-          <div class="overlay">
-            <div class="text">
-              <h3>Doors Mobile</h3>
-              <p>Making Windows failed mobile OS great again!</p>
-            </div>
+      <div class="card col-5">
+        <img src="https://images.pexels.com/photos/89955/pexels-photo-89955.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+        <div class="overlay">
+          <div class="text">
+            <h3>DarkTheme All The Things</h3>
+            <p>App that dark themes everything!</p>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="row">
+      <div class="card col-5">
+        <img src="https://images.pexels.com/photos/38271/ipad-map-tablet-internet-38271.jpeg?h=350&dpr=2&auto=compress&cs=tinysrgb" alt="">
+        <div class="overlay">
+          <div class="text">
+            <h3>UBER Late</h3>
+            <p>Find out why your driver is late!</p>
+          </div>
+        </div>
+      </div>
+      <div class="card col-5">
+        <img src="https://images.pexels.com/photos/242492/pexels-photo-242492.jpeg?h=350&dpr=2&auto=compress&cs=tinysrgb" alt="">
+        <div class="overlay">
+          <div class="text">
+            <h3>Doors Mobile</h3>
+            <p>Making Windows failed mobile OS great again!</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-    </section>
+  </section>
 
 
   <footer>
     <p>German Gamboa &copy; 2018</p>
   </footer>
   <script type="text/javascript">
-    window.onload = () =>{
+    window.onload = () => {
       let x = document.querySelectorAll('.container');
-      for(let i in x){
+      console.log(x);
+      for (let i = 0; i < x.length ; i++) {
         x[i].classList.add('animated', 'zoomIn');
       }
     }
