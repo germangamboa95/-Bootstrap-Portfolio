@@ -440,6 +440,9 @@ form {
   }
 
 @media (max-width: 570px) {
+  form button{
+    width: 100%;
+  }
   .contact-floats{
     margin: 1em 1em;
 
