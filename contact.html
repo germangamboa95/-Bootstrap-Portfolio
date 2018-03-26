@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>German Gamboa | Contact</title>
   <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/images/coffeebean-16-195484.png">
 
@@ -15,25 +17,27 @@
 <body>
   <div class="content group">
     <header class="group">
-      <div class="wrapper group">
-        <div class="logo">
-          <p>German Gamboa</p>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+          <div class="logo">
+            <p>German Gamboa</p>
+          </div></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link " href="portfolio.html">Portfolio</a>
+            <a class="nav-item nav-link active" href="contact.html">Contact</a>
+          </div>
         </div>
-        <nav class="group">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a class="active" href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-
-      </div>
-      <!--End of nav wrapper -->
+      </nav>
     </header>
-    <div class="wrapper">
+    <div class="container">
       <div class="row">
-        <section class="contact-floats  container col-8">
-          <h1>Contact</h1>
+        <section class="contact-floats col-xs-12 col-sm-12 col-md-8 mx-auto">
+          <h1 class="text-left">Contact</h1>
 
           <hr>
           <form action="POST">
@@ -45,17 +49,17 @@
             <label for="msg">Message:</label>
             <textarea id="msg" name="name" rows="8" cols="80"></textarea>
 
-            <button type="button" name="button">Submit</button>
+            <button  class="w-100 mx-auto" type="button" name="button">Submit</button>
           </form>
 
         </section>
-        <aside class="contact-floats  col-2">
+        <aside class="contact-floats  col-xs-12 col-sm-12 col-md-4">
           <h2>Social Media</h2>
           <ul>
-            <li><a href="https://www.facebook.com/german.gamboagonzalez" target="_blank"><img class="icon" src="assets/images/facebook-square.svg" alt=""></a></li>
-            <li><a href="https://github.com/germangamboa95" target="_blank"><img class="icon" src="assets/images/github.svg" alt=""></a></li>
-            <li><a href="https://www.youtube.com/channel/UC0y_YVXOGge141aAoNiaeRg?view_as=subscriber" target="_blank"><img class="icon" src="assets/images/youtube.svg" alt=""></a></li>
-            <li><a href="https://twitter.com/GermanGamGon" target="_blank"><img class="icon" src="assets/images/twitter-square.svg" alt=""></a></li>
+            <li class="d-inline-block d-md-block"><a href="https://www.facebook.com/german.gamboagonzalez" target="_blank"><img class="icon" src="assets/images/facebook-square.svg" alt=""></a></li>
+              <li class="d-inline-block d-md-block"><a href="https://github.com/germangamboa95" target="_blank"><img class="icon" src="assets/images/github.svg" alt=""></a></li>
+              <li class="d-inline-block d-md-block"><a href="https://www.youtube.com/channel/UC0y_YVXOGge141aAoNiaeRg?view_as=subscriber" target="_blank"><img class="icon" src="assets/images/youtube.svg" alt=""></a></li>
+              <li class="d-inline-block d-md-block"><a href="https://twitter.com/GermanGamGon" target="_blank"><img class="icon" src="assets/images/twitter-square.svg" alt=""></a></li>
           </ul>
         </aside>
       </div>
@@ -68,6 +72,9 @@
     </div>
 
   </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script type="text/javascript">
     window.onload = () => {
       let x = document.querySelectorAll('.container');

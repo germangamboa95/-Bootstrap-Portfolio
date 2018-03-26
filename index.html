@@ -16,31 +16,37 @@
 </head>
 
 <body>
-  <div class="content group">
+  <div class="content">
 
     <header class="group">
-      <div class="wrapper group">
-        <div class="logo">
-          <p>German Gamboa</p>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+          <div class="logo">
+            <p>German Gamboa</p>
+          </div></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active " href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link " href="portfolio.html">Portfolio</a>
+            <a class="nav-item nav-link" href="contact.html">Contact</a>
+          </div>
         </div>
-        <nav class="group">
-          <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-
-      </div>
-      <!--End of nav wrapper -->
+      </nav>
     </header>
 
-    <section class="container about-me group">
+    <section class="container about-me group mt-5">
       <h1>About Me</h1>
       <hr>
-      <img src="assets/images/IMG_0436.jpg" alt="A picture of German">
-      <p>A simple creature that goes by the name German. He is fueled by copious amounts of caffeine. Most of the time he can be found developing solutions on the web. This creature is by nature a problem solver. Thus it is only natural that he would also
+      <div class="row">
+        <div class="col-md-4">
+      <img class=""src="assets/images/IMG_0436.jpg" alt="A picture of German">
+      </div>
+      <p class="col-md-8">A simple creature that goes by the name German. He is fueled by copious amounts of caffeine. Most of the time he can be found developing solutions on the web. This creature is by nature a problem solver. Thus it is only natural that he would also
         be a Developer. German currently specializes in the Web Technologies. He can be found using HTML, CSS, JavaScipt, and PHP... in the same manner that primates use rocks to crack nuts.</p>
+        </div>
       <br>
     </section>
 
@@ -62,13 +68,13 @@
     <p>German Gamboa &copy; 2018</p>
   </footer>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script type="text/javascript">
     window.onload = () => {
       let x = document.querySelectorAll('.container');
       console.log(x);
-      for (let i = 0; i < x.length ; i++) {
+      for (let i = 0; i < x.length; i++) {
         x[i].classList.add('animated', 'zoomIn');
       }
     }
